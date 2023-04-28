@@ -76,4 +76,33 @@ src/index.html
 </html>
 ```
 
+## Prettier Setup
+
+
+<img src='https://tailwindcss.com/_next/static/media/prettier-banner.79c40690.jpg' width='70%' >
+
+<br>
+
+
+A [Prettier](https://prettier.io/) plugin for Tailwind CSS v3.0+ that automatically sorts classes based on [our recommended class order](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier#how-classes-are-sorted).
+
+## Installation
+
+To get started, just install `prettier-plugin-tailwindcss` as a dev-dependency:
+
+```sh
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+This plugin follows Prettier’s autoloading convention, so as long as you’ve got Prettier set up in your project, it’ll start working automatically as soon as it’s installed.
+
+_Note that plugin autoloading is not supported when using certain package managers, such as pnpm or Yarn PnP. In this case you may need to add the plugin to your Prettier config explicitly:_
+
+```js
+// prettier.config.js
+module.exports = {
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
+```
+
 
